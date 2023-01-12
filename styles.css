@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary-bg-color: #1992D4;
+  --secondary-bg-color: #E2E8F0;
+  --card-font-color: #929292;
+  --card-icons-color: #333333;
+  --card-border-color: #F0B429;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
