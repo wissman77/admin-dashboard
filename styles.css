@@ -23,6 +23,7 @@ img {
   transition: all .2s ease-in;
   cursor: pointer;
 }
+
 img:hover {
   transform: scale(1.2);
 }
@@ -320,7 +321,7 @@ img:hover {
   width: 20px;
 }
 
-@media (max-width:650px) {
+@media (max-width:750px) {
 
   .container {
     grid-template-rows: 1fr ;
