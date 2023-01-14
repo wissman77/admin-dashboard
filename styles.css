@@ -19,6 +19,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+img {
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+img:hover {
+  transform: scale(1.2);
+}
+
 /* BASIC LAYOUT */
 
 .container {
@@ -194,6 +202,12 @@ body {
   width: 80px;
   background-color: var(--primary-bg-color);
   color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--card-border-color);
 }
 
 /* MAIN CONTENT */
@@ -304,4 +318,35 @@ body {
 
 .sharing-panel img {
   width: 20px;
+}
+
+@media (max-width:650px) {
+
+  .container {
+    grid-template-rows: 1fr ;
+  }
+  .header {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px;
+  }  
+
+  .logged-user {
+    display: none;
+  }
+
+  .user-details {
+    padding-left: 20px;
+    gap: 20px;
+  }
+
+  .action-buttons {
+    padding-left: 20px;
+  }
+
+  .main-content {
+    grid-template-columns: auto;
+    gap: 30px;
+    align-items: center;
+  }
 }
